@@ -1,7 +1,4 @@
-#start
 
-sum = 0
-sum: int = int(input("numnber:"))
 
 #start
 
