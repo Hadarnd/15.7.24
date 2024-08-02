@@ -33,23 +33,4 @@ while True:
     if choice.casefold() == no:
         break
 
-
-
-
-
-
-
-
-
-
-#end    if not i % 7:
-        continue
-    sum += 1
-    print(i);
-
-print(sum)
-
-
-
-
 #end
