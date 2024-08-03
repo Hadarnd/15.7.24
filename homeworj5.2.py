@@ -1,5 +1,3 @@
-
-
 #start
 
 import random
@@ -13,21 +11,21 @@ for i in range(1):
     print()
 
 while True:
-
     num: int = int(input("Welcome to a loto game please choose a number:"))
-    count += 1
-    if num == rnd:
-        print(f"BINGO!!")
-        break
 
+    count += 1
     if num > rnd:
         print(f"number is too big")
     if num < rnd:
         print(f"number is too small")
+    if num == rnd:
+        print(f"BINGO!!")
+        print(f"Numbers of tring:{count}")
+        choice = input(f"Would you like to continue the game? (yes/no){yes} {no}")
+        if choice.casefold() == no:
+            break
 
-    print(f"Numbers of tring:{count}")
-    choice = input("Would you like to continue the game? (yes/ no):")
-    if choice.casefold() == no:
+        count += 1
         break
 
 #end
