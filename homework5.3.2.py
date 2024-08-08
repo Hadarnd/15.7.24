@@ -1,10 +1,17 @@
-
 #start
 
-floors = int(input("enter number:"))
 
-for i in range(1, floors + 1):
-    print(" " * (floors -i), end=" ")
-    print("*" * (i * 2 - 1))
+while True:
+    star = int(input("enter number:"))
+    if star % 2 != 0:
+        print("odd number, therefore:")
+        break
+
+for i in range(star):
+
+    spaces = " " * (star - i)
+    stars = "*" * (2 * i - 1)
+    print(spaces + stars)
+
 
 #end
